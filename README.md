@@ -57,7 +57,7 @@ pixel-pioneers/
 | **Reveal**   | `setRevealed(true)`              | Owner only — switches metadata from placeholder to final URIs |
 | **Withdraw** | `withdraw()`                     | Owner pulls ETH from sales                                    |
 
-Default mint price: **0.05 ETH** · Max supply: **1000** · Default royalty: **5% (500 BPS)**
+Default mint price: **0.01 ETH** · Max supply: **1000** · Default royalty: **5% (500 BPS)**
 
 ## Quickstart
 
@@ -138,7 +138,7 @@ make deploy-sepolia
 ```bash
 
 make enable-sale ARGS="--network sepolia" # setSaleStates(false, true)
-make mint ARGS="--network sepolia" # publicMint {value: 0.05 ether}
+make mint ARGS="--network sepolia" # publicMint {value: 0.01 ether}
 make reveal ARGS="--network sepolia" # setRevealed(true)
 ```
 
@@ -147,7 +147,7 @@ Or with cast:
 ```bash
 
 cast send <CONTRACT> "setSaleStates(bool,bool)" false true --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY
-cast send <CONTRACT> "publicMint()" --value 0.05ether --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY
+cast send <CONTRACT> "publicMint()" --value 0.01ether --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY
 cast call <CONTRACT> "tokenURI(uint256)" 0 --rpc-url $SEPOLIA_RPC_URL
 ```
 
