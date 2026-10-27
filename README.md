@@ -4,7 +4,8 @@ Production-style **ERC-721 NFT drop** contract built with **Solidity** and **Fou
 
 Includes whitelist presale (Merkle proofs), public sale, delayed reveal, ERC-2981 royalties, and a full unit + integration test suite with **100% line coverage** on the core contract.
 
-**Live (Sepolia):** [`0xCBAd8e8b77992de82D7D69230f56Df8F6e174803`](https://sepolia.etherscan.io/address/0xCBAd8e8b77992de82D7D69230f56Df8F6e174803#code) · Verified on Etherscan
+**Live (Sepolia):** [`0xCBAd8e8b77992de82D7D69230f56Df8F6e174803`](https://sepolia.etherscan.io/address/0xCBAd8e8b77992de82D7D69230f56Df8F6e174803#code) · Verified on Etherscan  
+**Frontend App (Vercel):** [pixel-pioneers-nft.vercel.app](https://pixel-pioneers-nft.vercel.app)
 
 ---
 
