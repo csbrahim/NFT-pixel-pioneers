@@ -33,9 +33,12 @@ pixel-pioneers/
 │   ├── DeployPixelPioneers.s.sol
 │   ├── HelperConfig.s.sol
 │   └── Interactions.s.sol
-└── test/
-    ├── unit/
-    └── integration/
+├── test/
+│   ├── unit/
+│   └── integration/
+└── pixel-pioneers-frontend/
+    ├── src/
+    └── package.json
 ```
 
 ```text
@@ -150,6 +153,20 @@ cast send <CONTRACT> "setSaleStates(bool,bool)" false true --rpc-url $SEPOLIA_RP
 cast send <CONTRACT> "publicMint()" --value 0.01ether --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY
 cast call <CONTRACT> "tokenURI(uint256)" 0 --rpc-url $SEPOLIA_RPC_URL
 ```
+
+## Frontend (Next.js)
+
+The project includes a full-stack Next.js dApp interface (`pixel-pioneers-frontend/`) built with **Next.js 16**, **React 19**, **Wagmi v2**, **RainbowKit**, and **Tailwind CSS**.
+
+### Running the Frontend
+
+```bash
+cd pixel-pioneers-frontend
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to interact with the minting interface, connect your wallet via RainbowKit, check whitelist status with Merkle proofs, and mint NFTs.
 
 ## Security Best Practices
 
